@@ -6,11 +6,12 @@ public class CDTestDemo {
 
 	public static void main(String[] args) {
 
-		int[] arr = new int[] { 0, 5, 1, 7, 3, 5, 0, 7, 0, 4 };
+		int[] arr = new int[] { 0, 5, 1, 3, 0, 7, 0, 4 };
+		Arrays.sort(arr);
+		System.out.println(arr[arr.length-2]);
 		
-		
-		int toptwo=Arrays.stream(arr).boxed().sorted(Comparator.reverseOrder()).distinct().skip(1).limit(1).findFirst().get();
-		System.out.println(toptwo);
+		//int toptwo=Arrays.stream(arr).boxed().sorted(Comparator.reverseOrder()).distinct().skip(1).limit(1).findFirst().get();
+		//System.out.println(toptwo);
 
 		// 0025173574
 
